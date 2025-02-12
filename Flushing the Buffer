@@ -31,5 +31,6 @@ The buffer may remain unflushed until it's full or flushed explicitly
 
 5. When std::cout is Interacting with std::cin
 The buffer flushes automatically before any std::cin input to ensure output appears before the user types.
+
 6. When the Program Exits Normally
 The output buffer is flushed before the program terminates.
