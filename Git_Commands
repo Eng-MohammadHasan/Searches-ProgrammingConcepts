@@ -1,0 +1,92 @@
+
+# Git & GitHub -->
+
+1- Make changes to a specific project in terminal by ...
+	
+	{ cd .. path ... } 
+
+2 - git init ...
+
+3 - To get rid of the (.git) in your files  ... rmdir /s /q .git  
+
+4 - To check which files are untracked or other things by 
+
+	( git status ) 
+
+5 - To add your files from your (working directory) to the
+	
+	( staging area ) , use 
+	{git add --all , or individually , git add ..file name..}
+ 	
+	finaly you can check (the added files & the untracked )
+        by git status
+
+6 - To commit your files to [local repository] , not your Remote ,
+	not Github , we haven't set any of that up yet .
+	This is all local ...
+ 
+	(git commit -m "Your commit message")
+
+7- But now for example if you ... fix something , or add feature ,
+	make some changes ... whatever here you should 
+	(add again)
+
+8- (git log ) will show you your commits ...
+
+9- Now time to [git push ] , push to a { Remote Repo },
+	or Github , Gitlab ...etc .
+	
+	*Firstly ---> Create a new Repository in Github,
+	
+	*Secondly--- > there is a command given down below , 
+	after creating the repository like this ...
+
+	git remote add origin https:
+	//github.com/E-MohammadHasan/task-tracker.git
+
+	#This command will add our local repository as
+	our remote repository !
+
+	*Thirdly ---> Now we want to make sure that we're 
+	in the main branch , {git branch -M main}
+	
+	*Finally ---> We want to push , use this
+	 (git push -u origin main) only for the first 
+	 time write (origin main) , but in the next pushs
+	 just type ... ( git push ).
+
+10 - If you would pull the changes from github
+	 (remote repository) , and also we would do 
+	this , if someone clone the repository and made 
+	some changes and then push to it,  
+	type {git pull}
+
+11 - Sometimes you're gonna have some things in your project 
+	that you aren't gonna want to push them to github ,
+	so in this case , you're gonna create (.gitignore )
+	file , and anything you will put it inside the file 
+	will be safe but not pushed to the repository !
+	put inside it the files name , that you want!
+
+12 - [Shortcuts] , to {add and commit} at the same time , use 
+	this command (git commit -am "..message..")
+	and by git status you can see that there is nothing in 	
+	the staging area , you will find (your branch is ahead by 
+	1 commit) . Finally just type (git push ) , and see your 
+	Remote Repository in github.
+
+	#But for committing and adding for a specific file , 
+	use this (git add index.html && git commit -m " Added task 7 ")
+ 	Then (git push).
+
+13 - [Getting Code From GitHub] --->
+
+	Downloading: You can download a zip of the repo
+	git clone: Get a copy of the full repo on to your machine
+	git pull: Get the latest changes from a repo
+	git fetch: Get latest changes without merging
+	forking: Copy a repository into your own account
+
+	
+ 
+	
