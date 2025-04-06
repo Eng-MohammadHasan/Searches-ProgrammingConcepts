@@ -18,6 +18,9 @@ GIT CHEAT SHEET .... https://education.github.com/git-cheat-sheet-education.pdf
 	
 	( staging area ) , use 
 	{git add --all , or individually , git add ..file name..}
+
+	* iF YOU WANT to get rid of a specific file type , 
+		git reset <file_name>
  	
 	finaly you can check (the added files & the untracked )
         by git status
@@ -42,8 +45,8 @@ GIT CHEAT SHEET .... https://education.github.com/git-cheat-sheet-education.pdf
 	*Secondly--- > there is a command given down below , 
 	after creating the repository like this ...
 
-	git remote add origin https:
-	//github.com/E-MohammadHasan/task-tracker.git
+	(git remote add origin https:
+	//github.com/E-MohammadHasan/task-tracker.git)
 
 	#This command will add our local repository as
 	our remote repository !
@@ -52,9 +55,13 @@ GIT CHEAT SHEET .... https://education.github.com/git-cheat-sheet-education.pdf
 	in the main branch , {git branch -M main}
 	
 	*Finally ---> We want to push , use this
-	 (git push -u origin main) only for the first 
+	 (git push -u origin main) ===> (git push ... <remote name> ... < branch name> )
+		{{{ -u here pull then push }}}!
+	 only for the first 
 	 time write (origin main) , but in the next pushs
 	 just type ... ( git push ).
+
+	
 
 10 - If you would pull the changes from github
 	 (remote repository) , and also we would do 
