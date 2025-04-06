@@ -1,4 +1,5 @@
 GIT CHEAT SHEET .... https://education.github.com/git-cheat-sheet-education.pdf
+
 # Git & GitHub -->
 
 1- Make changes to a specific project in terminal by ...
@@ -86,6 +87,16 @@ GIT CHEAT SHEET .... https://education.github.com/git-cheat-sheet-education.pdf
 	git pull: Get the latest changes from a repo
 	git fetch: Get latest changes without merging
 	forking: Copy a repository into your own account
+
+14 - Clone by ...
+	cd ---> Change directory in the terminal to the wanted path .
+	copy https url and type 
+	(git clone https.........)
+
+	And by typing (dir) or (ls) in mac , you can know the files inside the path that you 
+	change directory to it in the terminal ....
+	
+	
 
 	
  
