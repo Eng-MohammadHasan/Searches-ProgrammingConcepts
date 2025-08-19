@@ -4,6 +4,8 @@
 
 Boxing is the process of converting a primitive value into its corresponding wrapper object (`int` → `Integer`, `double` → `Double`, etc.).
 
+### 🔸 Example:
+
 ```java
 int a = 10;
 
@@ -14,6 +16,7 @@ Integer obj2 = Integer.valueOf(a); // Explicit boxing
 🔹 Unboxing
 
 Unboxing is the process of converting a wrapper object back into its corresponding primitive.
+🔸 Example:
 
 Integer obj = 20;
 
@@ -21,15 +24,15 @@ Integer obj = 20;
 int b = obj;            // Auto-unboxing
 int c = obj.intValue(); // Explicit unboxing
 
-🔹 When it happens
-Boxing
+🔹 When it Happens
+🔸 Boxing
 
 Occurs whenever a primitive is stored in a place that expects an object.
 
 List<Integer> list = new ArrayList<>();
 list.add(10); // int → Integer (boxing happens here)
 
-Unboxing
+🔸 Unboxing
 
 Occurs whenever an object (Integer) is used in a place that expects a primitive.
 
