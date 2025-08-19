@@ -58,9 +58,9 @@ for (int x : list) {   // Integer → int (unboxing happens each iteration)
 
 
     
-#C++ & Java References
-##🔹 C++ & and References
-##How & Avoids Copy
+# C++ & Java References
+## 🔹 C++ & and References
+## How & Avoids Copy
 
 ```cpp
 In C++, when you write:
@@ -91,7 +91,7 @@ Access is just like using the original object.
 This is critical for big objects (e.g., classes with strings, data structures).
 For primitives (int), the benefit is small but still avoids copy.
 
-#🔹 Java Objects and References
+# 🔹 Java Objects and References
 
 In Java, all objects (Student, Car, etc.) are already stored as references inside arrays or collections (List<Student>).
 
