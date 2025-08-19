@@ -52,4 +52,4 @@ for (int x : list) {   // Integer → int (unboxing happens each iteration)
 
 ```
 
-![Boxing vs Unboxing Diagram](Desktop/3.png)
+<img width="1054" height="826" alt="3" src="https://github.com/user-attachments/assets/53d977fe-70ac-4a13-bec7-667d9c18f895" />
