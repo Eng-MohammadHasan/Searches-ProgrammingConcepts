@@ -52,22 +52,25 @@ for (int x : list) {   // Integer → int (unboxing happens each iteration)
 
 ```
 
-C++ & Java References
-🔹 C++ & and References
-How & Avoids Copy
+#C++ & Java References
+##🔹 C++ & and References
+##How & Avoids Copy
 
+```cpp
 In C++, when you write:
 
 for (Student s : students) { }
 
+```
 
 A copy of each element is made (constructor is called, data duplicated).
 
 If you write:
 
+```cpp
 for (Student &s : students) { }
 
-
+```
 s is a reference.
 
 A reference is like a hidden pointer (but safer):
@@ -78,19 +81,19 @@ No new object is created.
 
 Access is just like using the original object.
 
-👉 So & means: "don’t copy, just alias the existing element."
+##👉 So & means: "don’t copy, just alias the existing element."
 This is critical for big objects (e.g., classes with strings, data structures).
 For primitives (int), the benefit is small but still avoids copy.
 
-🔹 Java Objects and References
+#🔹 Java Objects and References
 
 In Java, all objects (Student, Car, etc.) are already stored as references inside arrays or collections (List<Student>).
 
 When you write:
-
+```java
 for (Student s : students) { }
 
-
+```
 Java just copies the reference (like copying a pointer in C++).
 
 It does not duplicate the whole object.
