@@ -19,3 +19,18 @@ Integer obj = 20;
 // Unboxing (object → primitive)
 int b = obj;            // Auto-unboxing
 int c = obj.intValue(); // Explicit unboxing
+
+When it happens
+Boxing: whenever a primitive is stored in a place that expects an object.
+
+java
+List<Integer> list = new ArrayList<>();
+list.add(10); // int → Integer (boxing happens here)
+Unboxing: whenever an object (Integer) is used in a place that expects a primitive.
+
+java
+List<Integer> list = Arrays.asList(10, 20, 30);
+
+for (int x : list) {   // Integer → int (unboxing happens each iteration)
+    System.out.println(x);
+}
