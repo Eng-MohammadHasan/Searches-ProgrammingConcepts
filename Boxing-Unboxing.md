@@ -53,3 +53,10 @@ for (int x : list) {   // Integer → int (unboxing happens each iteration)
 ```
 
 <img width="1054" height="826" alt="3" src="https://github.com/user-attachments/assets/53d977fe-70ac-4a13-bec7-667d9c18f895" />
+
+
+<img width="833" height="1077" alt="Screenshot_1" src="https://github.com/user-attachments/assets/628b7f0e-2bb2-40d9-badb-a2071bf98d7f" />
+
+<img width="1089" height="838" alt="image" src="https://github.com/user-attachments/assets/d61401ed-ea48-4be6-82b9-832b31786e4b" />
+
+<img width="845" height="587" alt="image" src="https://github.com/user-attachments/assets/117e8e62-f153-4e8c-8f33-cc8272900aa1" />
