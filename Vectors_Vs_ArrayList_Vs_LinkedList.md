@@ -21,3 +21,24 @@ Each index = a pointer to an object on the heap.
 
 C++ vector → dynamic array of actual objects (unless you explicitly store pointers).
 Java ArrayList → dynamic array of pointers to objects.
+
+
+🔹 C++ vector
+
+Internally = contiguous array.
+Access by index (v[i]) = O(1) (constant time).
+No need to walk element by element — it’s direct.
+
+🔹 Java ArrayList
+
+Internally = contiguous array of references.
+Access by index (list.get(i)) = O(1) too.
+Again, no traversal like linked lists.
+
+🔹 Linked List (for contrast)
+
+Elements are scattered in memory, each has a pointer to the next.
+To reach index i, you must traverse node by node → O(n).
+
+✅ Conclusion:
+Both vector in C++ and ArrayList in Java give you fast direct indexing (O(1)), unlike linked lists.
