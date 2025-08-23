@@ -30,7 +30,7 @@ A pointer/reference to the next node.
 No contiguous block → each element lives anywhere in memory.
 👉 Access is sequential (must follow pointers node by node).
 
-✅ Conclusion:
+### ✅ Conclusion:
 
 Vector (C++): contiguous block, stores objects directly (fast direct access).
 C++ vector → dynamic array of actual objects (unless you explicitly store pointers).
@@ -59,5 +59,5 @@ Again, no traversal like linked lists.
 Elements are scattered in memory, each has a pointer to the next.
 To reach index i, you must traverse node by node → O(n).
 
-✅ Conclusion:
+### ✅ Conclusion:
 Both vector in C++ and ArrayList in Java give you fast direct indexing (O(1)), unlike linked lists.
