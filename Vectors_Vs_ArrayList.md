@@ -1,7 +1,6 @@
 🔹 C++ vector<T>
 
 Dynamic array (contiguous block of memory).
-
 If T is a normal type (e.g. int, struct Employee), the actual objects live directly inside that block.
 Each index = the object itself (not a pointer).
 If T is a pointer (e.g. vector<Employee*>), then the vector stores pointers, and those point elsewhere.
