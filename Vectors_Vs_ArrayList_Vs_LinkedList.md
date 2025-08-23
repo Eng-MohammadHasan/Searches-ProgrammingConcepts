@@ -1,7 +1,7 @@
-## 🔹 Memory Layout
+# 🔹 Memory Layout
 
 
-🔹 C++ vector<T>
+## 🔹 C++ vector<T>
 
 Dynamic array (contiguous block of memory).
 If T is a normal type (e.g. int, struct Employee), the actual objects live directly inside that block.
@@ -11,7 +11,7 @@ If T is a pointer (e.g. vector<Employee*>), then the vector stores pointers, and
 👉 So: by default, no extra pointers. The data is stored in place inside the vector’s memory.
 
 
-🔹 Java ArrayList<T>
+## 🔹 Java ArrayList<T>
 
 Dynamic array (contiguous block of memory).
 But Java only works with references to objects (except primitives with autoboxing).
@@ -20,7 +20,7 @@ Each index = a pointer to an object on the heap.
 
 👉 Always pointers inside. Objects are never stored directly in the ArrayList.
 
-🔹Linked List
+## 🔹Linked List
 
 Elements (nodes) are scattered across memory.
 Each node contains:
@@ -40,21 +40,21 @@ Java ArrayList → dynamic array of pointers to objects.
 
 Linked List: scattered nodes, each with pointer to next (no direct access).
 
-## Indexing and Access
+# Indexing and Access
 
-🔹 C++ vector
+## 🔹 C++ vector
 
 Internally = contiguous array.
 Access by index (v[i]) = O(1) (constant time).
 No need to walk element by element — it’s direct.
 
-🔹 Java ArrayList
+## 🔹 Java ArrayList
 
 Internally = contiguous array of references.
 Access by index (list.get(i)) = O(1) too.
 Again, no traversal like linked lists.
 
-🔹 Linked List (for contrast)
+## 🔹 Linked List (for contrast)
 
 Elements are scattered in memory, each has a pointer to the next.
 To reach index i, you must traverse node by node → O(n).
