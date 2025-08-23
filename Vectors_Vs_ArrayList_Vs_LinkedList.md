@@ -1,3 +1,4 @@
+1---> 
 🔹 C++ vector<T>
 
 Dynamic array (contiguous block of memory).
@@ -22,7 +23,7 @@ Each index = a pointer to an object on the heap.
 C++ vector → dynamic array of actual objects (unless you explicitly store pointers).
 Java ArrayList → dynamic array of pointers to objects.
 
-
+2--->
 🔹 C++ vector
 
 Internally = contiguous array.
