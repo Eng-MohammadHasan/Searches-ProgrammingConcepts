@@ -1,4 +1,6 @@
 1---> 
+
+
 🔹 C++ vector<T>
 
 Dynamic array (contiguous block of memory).
@@ -24,6 +26,8 @@ C++ vector → dynamic array of actual objects (unless you explicitly store poin
 Java ArrayList → dynamic array of pointers to objects.
 
 2--->
+
+
 🔹 C++ vector
 
 Internally = contiguous array.
