@@ -82,3 +82,63 @@ The loop variable y is redeclared every iteration, bound to the current element.
 After each iteration, y goes out of scope, and a new y is created in the next iteration.
 
 ✅ This behavior always happens in C++ for range-based for loops with references.
+
+## 1. Example Code
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x[] = { 1, 2, 3 };
+
+    // classic for loop
+    for (int i = 0; i <= 2; i++)
+    {
+        cout << &x[i] << endl;
+    }
+
+    cout << "\n===============\n";
+
+    // range-based for loop with reference
+    for (int& y : x)
+    {
+        cout << y << endl;
+        cout << &y << endl << endl;
+    }
+
+    return 0;
+}
+```
+2. Output
+diff
+Copy
+Edit
+000000586FAFF928
+000000586FAFF92C
+000000586FAFF930
+
+===============
+
+1
+000000586FAFF928
+
+2
+000000586FAFF92C
+
+3
+000000586FAFF930
+
+## Explanation
+The classic for loop prints the addresses of the array elements directly.
+
+The range-based for loop with reference prints the same addresses because:
+
+Each iteration creates a new reference variable y bound to the current element.
+
+After the iteration ends, y goes out of scope.
+
+The next iteration creates a new y for the next element.
+
+
