@@ -83,7 +83,7 @@ After each iteration, y goes out of scope, and a new y is created in the next it
 
 ✅ This behavior always happens in C++ for range-based for loops with references.
 
-## 1. Example Code
+## Example Code
 
 ```cpp
 #include <iostream>
@@ -111,7 +111,7 @@ int main()
     return 0;
 }
 ```
-2. Output
+### Output
 diff
 Copy
 Edit
@@ -130,7 +130,7 @@ Edit
 3
 000000586FAFF930
 
-## Explanation
+### Explanation
 The classic for loop prints the addresses of the array elements directly.
 
 The range-based for loop with reference prints the same addresses because:
