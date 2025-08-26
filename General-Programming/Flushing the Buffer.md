@@ -1,12 +1,12 @@
-A buffer flush is the transfer of computer data from a temporary storage area to the computer’s permanent memory. For instance, 
-if we make any changes in a file, the changes we see on one computer screen are stored temporarily in a buffer. 
-Usually, a temporary file comes into existence when we open any word document and is automatically destroyed when we close our main file.
-Thus when we save our work, the changes that we’ve made to our document since the last time we saved it are flushed from the buffer to permanent storage on the hard disk.
+## A buffer flush is the transfer of computer data from a temporary storage area to the computer’s permanent memory. For instance, 
+## if we make any changes in a file, the changes we see on one computer screen are stored temporarily in a buffer. 
+## Usually, a temporary file comes into existence when we open any word document and is automatically destroyed when we close our main file.
+## Thus when we save our work, the changes that we’ve made to our document since the last time we saved it are flushed from the buffer to permanent storage on the hard disk.
 
-In C++, we can explicitly be flushed to force the buffer to be written. Generally, the std::endl function works the same by inserting a new-line character and flushes the stream.
-stdout/cout is line-buffered that is the output doesn’t get sent to the OS until you write a newline or explicitly flush the buffer.
+## In C++, we can explicitly be flushed to force the buffer to be written. Generally, the std::endl function works the same by inserting a new-line character and flushes the stream.
+## stdout/cout is line-buffered that is the output doesn’t get sent to the OS until you write a newline or explicitly flush the buffer.
 
-In C++, the output buffer is a temporary storage used to hold data before sending it to the console (or other output destinations). The buffer is flushed (i.e., its contents are sent to the output) in several cases:
+## In C++, the output buffer is a temporary storage used to hold data before sending it to the console (or other output destinations). The buffer is flushed (i.e., its contents are sent to the output) in several cases:
 
 ### 1. When Using std::endl
 std::endl inserts a newline (\n) and flushes the buffer immediately.
