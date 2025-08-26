@@ -13,7 +13,7 @@ for (int& y : x) {
 }
 ```
 
-2. What the Compiler Actually Does (Simplified Expansion)
+## 2. What the Compiler Actually Does (Simplified Expansion)
 ```cpp
 Copy
 Edit
@@ -36,7 +36,7 @@ Edit
     }
 }
 ```
-3. Key Details
+## 3. Key Details
 int& y = *__begin; is inside the loop body.
 
 On every iteration:
@@ -65,7 +65,7 @@ for (int i = 0; i < 3; i++) {
 }
 
 ```
-4. Analogy
+## 4. Analogy
 A reference isn’t like a pointer that can be repointed.
 
 Instead, the loop is destroying the old y and constructing a new y every iteration.
@@ -111,7 +111,7 @@ int main()
     return 0;
 }
 ```
-### Output
+## Output
 diff
 Copy
 Edit
@@ -130,7 +130,7 @@ Edit
 3
 000000586FAFF930
 
-### Explanation
+## Explanation
 The classic for loop prints the addresses of the array elements directly.
 
 The range-based for loop with reference prints the same addresses because:
