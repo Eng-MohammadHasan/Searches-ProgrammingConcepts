@@ -8,28 +8,28 @@ stdout/cout is line-buffered that is the output doesn’t get sent to the OS unt
 
 In C++, the output buffer is a temporary storage used to hold data before sending it to the console (or other output destinations). The buffer is flushed (i.e., its contents are sent to the output) in several cases:
 
-1. When Using std::endl
+### 1. When Using std::endl
 std::endl inserts a newline (\n) and flushes the buffer immediately.
 This ensures that everything before std::endl is printed right away.
 
 std::cout << "Line 1" << std::endl; // Newline + buffer flush
 
 
-2. When the Buffer Fills Up
+### 2. When the Buffer Fills Up
 The buffer automatically flushes when it reaches its capacity.
 
 
-3. When Using std::flush
+### 3. When Using std::flush
 std::flush forces a buffer flush without adding a newline
 
 std::cout << "Processing..." << std::flush; // Flush buffer but stay on the same line
 
-4. When Using \n (Without Explicit Flush)
+### 4. When Using \n (Without Explicit Flush)
 \n only adds a newline but does not flush the buffer.
 The buffer may remain unflushed until it's full or flushed explicitly
 
-5. When std::cout is Interacting with std::cin
+### 5. When std::cout is Interacting with std::cin
 The buffer flushes automatically before any std::cin input to ensure output appears before the user types.
 
-6. When the Program Exits Normally
+### 6. When the Program Exits Normally
 The output buffer is flushed before the program terminates.
