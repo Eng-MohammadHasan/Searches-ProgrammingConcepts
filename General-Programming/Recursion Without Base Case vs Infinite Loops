@@ -9,6 +9,7 @@ Key Differences:
 - Stack Behavior: Creates new stack frame for every call
 - Memory Impact: Stack grows until limit → Crash
 - Example Code:
+- 
 void infiniteRecursion() {
     infiniteRecursion(); // Will crash with (StackOverflowError)
 }
