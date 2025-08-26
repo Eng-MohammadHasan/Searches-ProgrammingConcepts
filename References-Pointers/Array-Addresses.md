@@ -50,13 +50,14 @@ int main() {
 }
 ```
 🔹 Example output (addresses in hex will vary):
-
+```
 makefile
 Copy
 Edit
 arr:    0x7ffeefbff4a0
 &arr[0]:0x7ffeefbff4a0
 &arr:   0x7ffeefbff4a0
+```
 👉 They look the same, but:
 
 arr → type is int* (pointer to int).
