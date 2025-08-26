@@ -11,7 +11,6 @@ Key Differences:
 - Example Code:
 void infiniteRecursion() {
     infiniteRecursion(); // Will crash with (StackOverflowError)
-   r
 }
 
 2. Infinite Loop (while(true)):
