@@ -1,6 +1,7 @@
 # Understanding Range-Based For Loops with References in C++
+# Why References in Range-Based For Loops Work
 
-This file explains how C++ range-based for loops work when using references, why a reference variable seems to be "rebinding" each iteration, and the difference in scope compared to classic for loops.
+This file explains why a reference in a C++ range-based for loop works even though it seems like it is re-initialized multiple times, which normally isn’t allowed. It covers how the compiler handles the reference, its scope, and how it differs from a classic for loop.
 
 ## 1. Original Code
 ```cpp
