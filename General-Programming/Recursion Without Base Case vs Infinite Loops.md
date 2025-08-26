@@ -10,8 +10,8 @@ Key Differences:
 - Memory Impact: Stack grows until limit → Crash
 - Example Code:
 void infiniteRecursion() {
-    infiniteRecursion(); // Will crash with StackOverflowError
-    ### StackOverflowError
+    infiniteRecursion(); // Will crash with (StackOverflowError)
+   r
 }
 
 2. Infinite Loop (while(true)):
