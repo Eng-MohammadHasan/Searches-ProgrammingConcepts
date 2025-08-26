@@ -1,3 +1,4 @@
+```java
 public void pop() {
        //int x = -999999;
         if (isEmpty()) {
@@ -8,7 +9,7 @@ public void pop() {
         }
         System.out.println(x);
     }. why do we got an error here ????
-
+```
 Is this means that we store the value of x inside the block only like temporary not inside the memory ????????
 -------------------------------------------------------------------------------
 
