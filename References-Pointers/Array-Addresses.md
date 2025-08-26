@@ -26,13 +26,8 @@ arr → pointer to first element (int*).
 
 👉 So yes, the block has an address, and it’s the address of the first element — but technically, the type of that address depends on how you reference it.
 
-Want me to show you the difference in hex output between arr, &arr[0], and &arr?
-
 You said:
-&arr → address of the whole array block (int (*)[5]), same value as arr, but different type. what do you mean the output is the same
-
-
-Good question 👍 Let’s dig in.
+&arr → address of the whole array block (int (*)[5]), same value as arr, but different type !
 
 When you print addresses, the number (the hex value) is the same, but the type of the pointer is different.
 
