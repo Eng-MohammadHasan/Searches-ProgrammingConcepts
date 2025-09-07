@@ -1,15 +1,15 @@
-# 1D and 2D Array Addressing & Access
+## C++ Pointers: Accessing and Navigating 1D & 2D Arrays
 
 ```cpp
 // 1. One-dimensional array
 int arr[3] = {10, 20, 30};
 int *p = arr;   // points to arr[0]
 
-// address
+// Displaying addresses
 cout << arr     << '\n';   // address of arr[0]
 cout << p       << '\n';   // same
 
-// access value
+// Accessing values
 cout << arr[1]  << '\n';   // 20
 cout << *(p+1)  << '\n';   // 20
 
@@ -17,12 +17,12 @@ cout << *(p+1)  << '\n';   // 20
 int mat[2][3] = {{1,2,3},{4,5,6}};
 int (*p2)[3] = mat;   // pointer to array of 3 ints (row)
 
-// address
+// Displaying addresses
 cout << mat      << '\n';   // address of row 0
 cout << p2       << '\n';   // same
 cout << mat[1]   << '\n';   // address of row 1
 
-// access value
+// Accessing values
 cout << mat[1][2]     << '\n';   // 6
 cout << *(*(p2+1)+2)  << '\n';   // 6
 
@@ -74,6 +74,4 @@ arr + 1         → pointer to row 1 (Matrix[1])  // moves the pointer to the ne
 arr + row_index              → jumps to that row
 *(arr + row_index) + col_index → points to that column
 *(*(arr + row_index) + col_index) → gets the value
-
-
 ```
