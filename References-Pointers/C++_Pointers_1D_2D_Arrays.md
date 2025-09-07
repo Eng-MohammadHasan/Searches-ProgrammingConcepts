@@ -1,4 +1,4 @@
-## C++ Pointers: Accessing and Navigating 1D & 2D Arrays
+## C++ Pointers: Accessing and Navigating 1D & 2D Arrays with Pointer Arithmetic.md
 
 ```cpp
 // 1. One-dimensional array
