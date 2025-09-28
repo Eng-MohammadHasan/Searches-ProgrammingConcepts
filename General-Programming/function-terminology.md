@@ -7,6 +7,11 @@
 
 ```cpp
 int Add(int a, int b = 0);  // prototype
+
+// Both are valid declarations
+int ReadNumber(string);           // no parameter name
+int ReadNumber(string message);   // with parameter name
+
 ```
 
 ## 2. Function Definition (Implementation / Body)
