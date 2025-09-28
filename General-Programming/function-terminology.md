@@ -9,7 +9,7 @@
 int Add(int a, int b = 0);  // prototype
 ```
 
-2. Function Definition (Implementation / Body)
+## 2. Function Definition (Implementation / Body)
 The actual code of the function.
 
 Contains the function header + body { }.
@@ -21,7 +21,7 @@ int Add(int a, int b) {   // definition
 }
 
 ```
-3. Function Signature
+## 3. Function Signature
 Name + parameter types (does NOT include return type).
 
 Used to distinguish overloaded functions.
@@ -34,7 +34,7 @@ int Add(int a, int b);
 double Add(double x, double y);
 
 ```
-4. Function Header
+## 4. Function Header
 The first line of the function definition (before the { }).
 
 Includes return type, name, and parameters.
@@ -46,7 +46,7 @@ int Add(int a, int b)   // header
 }
 
 ```
-5. Declaration vs Definition
+## 5. Declaration vs Definition
 Declaration (prototype): The "promise". Ends with ;.
 
 Definition: The "implementation". Has { }.
@@ -61,7 +61,7 @@ int Multiply(int x, int y) {
 }
 
 ```
-✅ Summary
+## ✅ Summary
 Prototype = declaration with ; (often in .h file).
 
 Signature = name + parameter types (for overloading).
